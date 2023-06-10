@@ -15,3 +15,8 @@ while a != 100 do
      a = a+1
 end
 puts a
+
+arr = ('a'..'z').to_a
+for variable in arr do
+    puts variable
+end
