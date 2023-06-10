@@ -9,3 +9,9 @@ random_integers = []
     random_integers.push(rand(10))
 end
 puts random_integers
+
+a = 0
+while a != 100 do
+     a = a+1
+end
+puts a
