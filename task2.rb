@@ -12,8 +12,18 @@ f = MyFirstClass.new
 s = MySecondClass.new
 puts f.class
 puts s.class
-puts f.class == MyFirstClass
-puts s.class == MySecondClass
-puts MySecondClass.superclass
-puts MySecondClass.superclass.superclass
+    
+    puts f.class == MyFirstClass
+    puts s.class == MySecondClass
+    puts MySecondClass.superclass
+    puts MySecondClass.superclass.superclass
+    
+    class MyFirstClass
+        def initialize(a)
+            @a = a
+        end
+    end
+b = MyFirstClass.new(3)
+puts b.class
+b.instance.var
     
