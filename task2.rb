@@ -10,6 +10,11 @@ class MyFirstClass
   def var=(number)
     @var = number
   end
+  def introduce(n)
+    #i = MyFirstClass.new(n)
+    #puts "Hello! I am #{i.class.name}"
+    puts "Hello! I am " + n.class.name
+  end
 end
 
 class MySecondClass < MyFirstClass
@@ -37,10 +42,12 @@ inst = MyFirstClass.new(3)
 puts inst.class
 puts inst.var
 puts inst.var = 4
-        
+inst.introduce(inst)
+      
 inst2 = MySecondClass.new(5)
 puts inst2.class
 puts inst2.var
 #puts inst2.var = 6
 inst2.send(:var=, 6)
+inst2.introduce(inst2)
 
