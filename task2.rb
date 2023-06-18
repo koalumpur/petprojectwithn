@@ -13,6 +13,13 @@ class MyFirstClass
 end
 
 class MySecondClass < MyFirstClass
+  private
+  
+  def var= (number)
+    @var = number*2
+    puts @var
+  end
+  
 end
 
 puts MySecondClass.superclass
@@ -34,5 +41,6 @@ puts inst.var = 4
 inst2 = MySecondClass.new(5)
 puts inst2.class
 puts inst2.var
-puts inst2.var = 6
-        
+#puts inst2.var = 6
+inst2.send(:var=, 6)
+
