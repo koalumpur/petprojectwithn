@@ -1,15 +1,17 @@
 class MyFirstClass
+  attr_accessor :var
+
   def initialize(a)
     @var = a
   end
         
-  def var
-    @var
-  end
+  #def var
+    #@var
+  #end
         
-  def var=(number)
-    @var = number
-  end
+  #def var=(number)
+    #@var = number
+  #end
   def self.introduce
     #i = MyFirstClass.new(n)
     #puts "Hello! I am #{i.class.name}"
@@ -18,12 +20,14 @@ class MyFirstClass
 end
 
 class MySecondClass < MyFirstClass
+  attr_accessor :var
+  
   private
   
-  def var= (number)
-    @var = number*2
-    puts @var
-  end
+  #def var= (number)
+    #@var = number*2
+    #puts @var
+  #end
   
 end
 
