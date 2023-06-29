@@ -6,6 +6,7 @@ class Image
     @size = size
     @name = name
     @url = url
+    @sensitive_content = [false, false, true].sample
   end
   
   def file_name(name, type)
@@ -16,3 +17,5 @@ end
 a = Image.new("png", 3, "lolipop", "www.site.com")
 puts a.class
 puts a.file_name(@name, @type)
+  
+  
