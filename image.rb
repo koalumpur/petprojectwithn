@@ -18,4 +18,5 @@ a = Image.new("png", 3, "lolipop", "www.site.com")
 puts a.class
 puts a.file_name(@name, @type)
   
-  
+class Avatar < Image
+end
